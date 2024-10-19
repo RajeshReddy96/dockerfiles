@@ -6,5 +6,6 @@ FROM almalinux:${version:-9}
 # here pulling 8 version
 ARG course="DevOps with AWS" \
     duration="20hrs"
+ENV duration=$duration    
 RUN echo "Course: $course, Duration: $duration, Version: $version"
 CMD ["sleep", "100"]
